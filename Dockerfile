@@ -25,7 +25,7 @@ RUN cmake -B build -S . \
     && strip build/pioasm
 
 # Minimal runtime image
-FROM ubuntu:24.04
+FROM gcr.io/distroless/cc
 
 COPY --from=builder /build/pico-sdk/tools/pioasm/build/pioasm /usr/local/bin/pioasm
 
