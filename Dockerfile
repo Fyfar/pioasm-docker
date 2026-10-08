@@ -2,7 +2,7 @@ FROM ubuntu:24.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ARG PICO_SDK_VERSION=2.2.0
+ARG PICO_SDK_VERSION=2.3.1
 
 RUN apt-get update && apt-get install -y \
     build-essential \

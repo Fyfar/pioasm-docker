@@ -10,14 +10,14 @@ The upstream Docker image used an outdated `pico-sdk` version, which caused buil
 This version tracks the active Raspberry Pi SDK repository and ensures compatibility with current examples and tooling.
 
 ## Run
-`docker run --rm fyfar/pioasm:2.2.0 --version`
+`docker run --rm fyfar/pioasm:2.3.1 --version`
 
 Compile a .pio file:
 ```
 docker run --rm \
   -v $(pwd):/work \
   -w /work \
-  fyfar/pioasm:2.2.0 \
+  fyfar/pioasm:2.3.1 \
   input.pio output.h
 ```
 
